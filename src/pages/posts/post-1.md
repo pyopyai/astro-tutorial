@@ -8,6 +8,8 @@ tags:
     - メモ
 ---
 
+
+↓めちゃAI生成　こたつ記事量産できますね～
 # はじめに
 
 ここはテスト用のサンプル記事です。Astro プロジェクト内でのページ作成の挙動を確認するために作成しました。
@@ -25,3 +27,9 @@ tags:
 3. 記事テンプレートを作成して自動化する
 
 以上。
+
+## 参考
+
+- [【感想】Next.js は手に余るから初心者に推奨できない](https://qiita.com/tomy0610/items/f07d586c08a0a2aadb01)
+- [Astro Docs](https://docs.astro.build/en/getting-started/)
+- [Cloudflare Docs > Directory > Workers > CI/CD > Builds](https://developers.cloudflare.com/workers/ci-cd/builds/)
