@@ -1,6 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
 
 import '../styles/global.css';
 
@@ -23,32 +23,7 @@ const skillColor = "crimson";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<style define:vars={{skillColor, fontWeight,textCase}}>
-			h1 {
-				color: purple;
-				font-size: 4rem;
-			}
-			.skill {
-				color: var(--skillColor);
-				font-weight: var(--fontWeitht);
-				text-transform: var(--textCase);
-			}
-		</style>
-
-	</head>
-	<body>
-		<Navigation />
-
-
-		<h1>{pageTitle}</h1>
+<BaseLayout pageTitle={pageTitle}>
         <h2 >This is the about page</h2>
 
         <p>Welcome to the about page of my Astro site. Here you can learn more about me and what I do.</p>
@@ -74,7 +49,4 @@ const textCase = "uppercase";
 
 		{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 
-		<Footer />
-
-	</body>
-</html>
+</BaseLayout>
