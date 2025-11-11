@@ -1,3 +1,12 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "テステスのピストル"
+pubDate: 2025-11-11
+description: "本当に適当な記事"
+author: "fuga"
+---
+
+
 # hogehoge
 テステス
 
